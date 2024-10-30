@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="EN-CA">
-<head>
-<meta charset="UTF-8">
-<title>Typography Demo</title>
-<style>
-  /* Note this gradient! Learn how to do this here: https://www.w3schools.com/css/css3_gradients.asp */
-  html {background-image: linear-gradient(to bottom right, blue, grey);}
-  #main {width: 800px}
-  h1 {}
-  p {}
-</style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Typography Demo</title>
+<!--Google Fonts Body Text used in p-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--Google Fonts Header Text used in h1-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+  
+    <style>
+      /* Note this gradient! Learn how to do this here: https://www.w3schools.com/css/css3_gradients.asp */
+      html {
+        background-image: linear-gradient(to bottom right, blue, grey);
+        font-size: 16px;
+      }
+
+      #main {
+        width: 900px;
+        color: white;
+        padding: 2px 10px 0 0;
+      }
+
+      /* I forgot to mention font-weight in the demo! For any font the default is usually 500. Higher values are heavier weights and lower values are lighter weights. With Google fonts, many fonts have the options to serve different versions of the same font if you change the weight and other settings. See if the Google fonts you pick have different weight options—experiment! */
+      
+      h1 { 
+      font-size: 2.75em; 
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      }
+
+      p {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.625em;
+      width: 90%;
+      line-height: 1.5em; 
+      color: #dddddd;  
+}  
+    </style>
+  </head>
   <body>
     <div id="main">
-    <h1>Phasellus laoreet ornare semper</h1>
-     <p>Sed cursus porta suscipit. Nunc non justo vel metus scelerisque sagittis vel consectetur metus. Morbi sit amet mi rutrum, bibendum orci vitae, rhoncus mi. Donec quis velit justo. Sed ultricies justo id euismod convallis. Maecenas sollicitudin varius velit id sagittis. Praesent tincidunt semper rutrum. Donec vel sapien dui.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante elit, malesuada fringilla placerat vel, laoreet congue ligula. Aenean vitae pulvinar risus, tempor venenatis magna. Cras maximus dictum libero, ut molestie quam imperdiet in.</p>
+      <h1>Phasellus laoreet ornare semper</h1>
+      <p>Sed cursus porta suscipit. Nunc non justo vel metus scelerisque sagittis vel consectetur metus. Morbi sit amet mi rutrum, bibendum orci vitae, rhoncus mi. Donec quis velit justo. Sed ultricies justo id euismod convallis. Maecenas sollicitudin varius velit id sagittis. Praesent tincidunt semper rutrum. Donec vel sapien dui.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante elit, malesuada fringilla placerat vel, laoreet congue ligula. Aenean vitae pulvinar risus, tempor venenatis magna. Cras maximus dictum libero, ut molestie quam imperdiet in.</p>
     </div>
   </body>
 </html>
